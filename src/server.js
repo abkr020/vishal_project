@@ -1,3 +1,4 @@
+// every thing works so just remove the env file
 const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./db');
