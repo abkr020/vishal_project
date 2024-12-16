@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "src": "/shorten",
+        "dest": "/src/routes/urlRoutes.js"
+      },
+      {
+        "src": "/:shortUrl",
+        "dest": "/src/routes/urlRoutes.js"
+      }
+    ]
+  }
+  

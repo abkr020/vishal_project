@@ -5,13 +5,15 @@ document.getElementById('shortenBtn').addEventListener('click', async () => {
         return;
     }
     try {
-        const response = await fetch('/shorten', {
+        
+        const response = await fetch(`${window.location.origin}/shorten`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ originalUrl })
         });
+        
         const data = await response.json();
         document.getElementById('result').textContent = `Shortened URL : ${window.location.href}${data.shortUrl}`;
     } catch (err) {
